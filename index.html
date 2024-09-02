@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Anna</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background: linear-gradient(to bottom, #ff00ff, #00ffff);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px #ff00ff;
+            text-align: center;
+        }
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+        .neon-box {
+            border: 3px solid #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            background: #000000;
+            color: #00ff00;
+            padding: 10px 0;
+        }
+        .marquee-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translate(100%, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skill {
+            background-color: #ff00ff;
+            color: #ffffff;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 15px;
+        }
+        .projects {
+            text-align: left;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #00ffff;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+            font-weight: bold;
+            text-shadow: 0 0 5px #00ffff;
+        }
+        a:hover {
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="blink">Anna Sims</span></h1>
+        <div class="marquee">
+            <div class="marquee-content">
+                🚀 Software Engineer    |    💻 Data Scientist   |   🌟 Hacker   |   🔬 Researcher   |   🎓 Student. . . . . . . . . .  not your average new grad.
+            </div>
+        </div>
+        <div class="nav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="resume.pdf" target="_blank">Resume</a>
+            <a href="https://sycorpia.substack.com/" target="_blank">Blog</a>
+        </div>
+
+        
+        <div id="about" class="neon-box">
+            <h2>About Me</h2>
+            <p>Hey there! I'm Anna Sims, a Data Science student at the University of Michigan with a passion for AI, machine learning, and innovative tech solutions. I'm on track to graduate in May 2025 with a Bachelor of Engineering in Data Science and a Minor in Business.
+            </p>
+            <p><a href="resume.pdf" target="_blank">📄 View my full resume</a></p>
+        </div>
+        
+        <div class="neon-box">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill">C++</span>
+                <span class="skill">Python</span>
+                <span class="skill">R</span>
+                <span class="skill">SQL</span>
+                <span class="skill">TensorFlow</span>
+                <span class="skill">PyTorch</span>
+                <span class="skill">AWS</span>
+                <span class="skill">Docker</span>
+            </div>
+        </div>
+        
+        <div id="projects" class="neon-box projects">
+            <h2>Cool Projects</h2>
+            <ul>
+                <li><a href="https://github.com/tesims/drolg/" target="_blank">AI Party DJ</a> (HackMIT)</li>
+                <li><a href="https://devpost.com/software/datamask" target="_blank">Context Preserving Data Mask</a> (Google x MHacks AI Hackathon, 4th Place)</li>
+                <li><a href="https://devpost.com/software/navalone" target="_blank">AI Memory Companion for Elderly</a> (HackHarvard, Best First-time Hack Award)</li>
+                <li><a href="https://devpost.com/software/paperping" target="_blank">Real-time Alerts for New Research Papers</a> (PennApps, Wolfram Award)</li>
+                <li><a href="https://devpost.com/software/paperping" target="_blank">The Slap</a> (Integrated Product Design)</li>
+                <li><a href="https://github.com/tesims/Multi-Asset-Hedging-Strategies" target="_blank">Spot Options Hedging Strategies and Data Extraction</a></li>
+            </ul>
+        </div>
+        
+        <div id="experience" class="neon-box">
+            <h2>Experience Highlights</h2>
+            <p>🚀 ByteDance Innovator Fellow</p>
+            <p>🕶️ XR Developer at Emerging Technologies Group</p>
+            <p>📊 Quantitative Trading Intern at Digital Currency Group</p>
+            <p>🔬 Research Assistant at ASSET Lab</p>
+        </div>
+        
+        <div class="neon-box">
+            <h2>Let's Connect!</h2>
+
+            <p>📧 Email: <a href="mailto:tesims@umich.edu">tesims@umich.edu</a></p>
+            <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/anna-sims-04b114271/" target="_blank">linkedin.com/in/anna-sims</a></p>
+            <p>🐙 GitHub: <a href="https://github.com/tesims" target="_blank">github.com/tesims</a></p>
+        </div>
+    </div>
+
+
+</body>
+</html>
